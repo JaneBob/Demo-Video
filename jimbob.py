@@ -1,2 +1,5 @@
 def three_times(x):
-    return 3*x
+    if isinstance(x, (int, float, complex)):
+        return 3*x
+    else:
+        return None
